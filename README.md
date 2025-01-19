@@ -1,82 +1,66 @@
 # Challenge ONE - Back End Java + Spring - API Rest Foro Alura.
 
-![Badge Release](https://img.shields.io/badge/Release%20Date:-Mayo-blue)``
+![Badge Release](https://img.shields.io/badge/Release%20Date:-enero2025-blue)``
 ![Badge Java](https://img.shields.io/badge/Java:-17-blue)
 ![Badge Java](https://img.shields.io/badge/Spring%20Boot:-3.1.0-blue)
 ![Badge Finalizado](https://img.shields.io/badge/Status:-Finalizado-blue)
 
-## Descrpción del Proyecto
+## Descrpción del proyecto
 
-Es la resolución del **Challenge - Foro Alura** utilizando **Spring Boot** para la creacion de la API Rest, **MySQL** para las bases de datos y **Java 17** para el desarrollo con ayuda del IDE de **Intellij** e **Insomnia** para las respectivas pruebas a la API. Cuarto reto de la formación **Oracle Next Education (ONE)** de **Oracle + Alura LATAM**.
-
-El reto cosiste en crear una **API** implementando las mejores practicas del modelo **Rest** con validaciones y una implementación de una base de datos para la persistancia de la información.
+La construcción del Challenge - Foro Alura se basa en la creación de una API Rest utilizando Spring Boot para el desarrollo del back-end, MySQL como sistema de gestión de bases de datos, y Java 17 como lenguaje de programación. El desarrollo se realiza con el IDE IntelliJ, mientras que las pruebas a la API se realizan utilizando Insomnia. Este desafío corresponde al cuarto reto de la formación Oracle Next Education (ONE) de Oracle + Alura LATAM. El objetivo del reto es crear una API que implemente las mejores prácticas del modelo Rest, con validaciones personalizadas y una base de datos que garantice la persistencia de la información, enfocándose en el manejo eficiente de los tópicos y sus respuestas en un foro.
 
 ### Historia
 
-El _Foro Alura_ es un lugar donde todos los alumnos de la plataforma Alura pueden colocar sus preguntas sobre determinados cursos, este mágico lugar está lleno de mucho aprendizaje y de colaboración entre alumnos, profesores y moderadores.
+El Foro Alura es un espacio donde los estudiantes de la plataforma pueden hacer preguntas sobre diversos cursos, fomentando el aprendizaje y la colaboración entre alumnos, profesores y moderadores. En este desafío, replicaremos el funcionamiento de este foro a nivel de Back End creando una API Rest con Spring Boot. La API se enfocará en la gestión de tópicos, permitiendo a los usuarios realizar operaciones como crear, ver, actualizar y eliminar tópicos, así como gestionar las relaciones entre los tópicos, las respuestas y los usuarios. La información se almacenará en una base de datos, asegurando la persistencia y correcta gestión de los datos.
 
-Ya sabemos para que sirve el foro y sabemos cómo se ve, pero ¿sabemos cómo funciona por detrás? Es decir, ¿dónde se almacena la información? ¿cómo se tratan esos datos para que se relacione un tópico con una respuesta, o como se relacionan los usuarios con las respuestas de un tópico?
+### Funcionalidades
 
-Este es nuestro desafío, vamos a replicar a nivel de **Back End** este proceso, y para eso rearemos una **API Rest** usando **Spring Boot**.
+Funcionalidad 1: Crear un nuevo tópico.
+Permite a los usuarios crear un tópico nuevo en la aplicación.
 
-Nuestra **API** va a centrarse específicamente en los tópicos y permitir a los usuarios:
+Funcionalidad 2: Mostrar todos los tópicos creados.
+Muestra una lista de todos los tópicos que han sido registrados en el sistema.
 
-### :hammer:Funcionalidades
+Funcionalidad 3: Mostrar un tópico específico.
+Permite consultar un tópico en particular mediante su identificador único.
 
-- `Funcionalidad 1`: Crear un nuevo tópico.
-- `Funcionalidad 2`: Mostrar todos los tópicos creados.
-- `Funcionalidad 3`: Mostrar un tópico específico.
-- `Funcionalidad 4`: Actualizar un tópico.
-- `Funcionalidad 5`: Eliminar un tópico.
-- `Funcionalidad 6`: API con rutas implementadas siguiendo las mejores prácticas del modelo Rest.
-- `Funcionalidad 7`: Validaciones realizadas según reglas del negócio.
-- `Funcionalidad 8`: Implementación de una base de datos para la persistencia de la información.
+Funcionalidad 4: Actualizar un tópico.
+Facilita la actualización de la información de un tópico ya existente.
 
-## Comenzando 🚀
+Funcionalidad 5: Eliminar un tópico.
+Permite eliminar un tópico del sistema mediante su identificador.
 
-_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
+Funcionalidad 6: API con rutas implementadas siguiendo las mejores prácticas del modelo Rest.
+Se implementan rutas RESTful que permiten realizar operaciones CRUD de manera eficiente y conforme a los principios REST.
 
-Mira **Deployment** para conocer como desplegar el proyecto.
+Funcionalidad 7: Validaciones realizadas según reglas del negocio.
+Se implementan validaciones personalizadas para garantizar que los datos sean correctos antes de ser almacenados.
 
+Funcionalidad 8: Implementación de una base de datos para la persistencia de la información.
+Se utiliza una base de datos para almacenar los tópicos y asegurarse de que la información persista entre sesiones de usuario.
 
-### Pre-requisitos 📋
+## Comenzando 
 
-_Que cosas necesitas para instalar el software y como instalarlas_
+Estas indicaciones te guiarán para obtener una copia funcional del proyecto en tu máquina local, con el fin de realizar desarrollos y pruebas. Asegúrate de seguir todos los pasos para configurar correctamente el entorno de desarrollo, instalar las dependencias necesarias y ejecutar el proyecto en tu equipo. Para más información sobre cómo desplegar el proyecto en un entorno de producción, revisa la sección de Deployment.
 
-```
-Da un ejemplo
-```
+### Pre-requisitos 
 
-### Instalación 🔧
+Para instalar y configurar el entorno de desarrollo, primero necesitas tener el JDK (Java Development Kit) instalado, que puedes descargar desde Oracle o OpenJDK, y verificar su instalación con java -version. También necesitas un IDE como IntelliJ IDEA, Eclipse o VS Code, que puedes descargar e instalar desde sus respectivos sitios web. Además, es recomendable contar con Maven o Gradle para gestionar dependencias y construir proyectos, y puedes verificar la instalación de Maven con mvn -version. Finalmente, necesitarás una base de datos MySQL para almacenar la información, que puedes descargar e instalar desde el sitio oficial de MySQL, y verificar la conexión con mysql -u root -p. Con estas herramientas instaladas y configuradas, estarás listo para comenzar con el desarrollo.
 
-_Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
+### Instalación 
 
-_Dí cómo será ese paso_
+Para configurar un entorno de desarrollo con Spring Boot, primero instala el JDK y verifica su configuración con java -version. Luego, opcionalmente instala Spring Boot CLI con Homebrew o descárgalo desde su sitio oficial. Genera un proyecto en Spring Initializr configurando dependencias como Spring Web y Spring Data JPA, y descomprímelo en tu IDE. Configura una base de datos (como MySQL), crea la base y ajusta las credenciales en application.properties. Define una entidad con JPA y un repositorio para interactuar con la base de datos. Finalmente, crea un controlador REST para probar la API y usa Postman o cURL para enviar datos, como guardar y recuperar libros, comprobando que todo funcione correctamente.
 
-```
-Da un ejemplo
-```
+## Desarrollado con las siguientes herramientas:_
 
-_Y repite_
-
-```
-hasta finalizar
-```
-
-_Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
-
-## Construido con 🛠️
-
-_Para desarrollar el proyecto, utilice las siguientes herramientas:_
-
-* [Trello](https://trello.com/es) - Herramienta de gestión de proyectos.
-* [MySQL](https://www.mysql.com/) - Sistema de gestión de bases de datos.
+* [Trello](https://trello.com/es) - Herramienta de gestión de proyectos sugerida por Alura
+* [MySQL](https://www.mysql.com/) - Sistema de gestión de bases de datos de SQL de Oracle
 * [Java 17](https://www.oracle.com/java/) - Lenguaje de programación.
-* [IntelliJ IDEA](https://www.jetbrains.com/idea/) - Entorno de desarrollo integrado para el desarrollo de programas informáticos.
-* [Spring Boot](https://start.spring.io/) - Herramienta que hace que el desarrollo de aplicaciones web y microservicios con Spring Framework sea más rápido y fácil.
+* [IntelliJ IDEA](https://www.jetbrains.com/idea/) -  funciona como entorno de desarrollo integrado (IDE) para el desarrollo de programas informáticos es NetBeans.
+NetBeans es un IDE de código abierto que permite desarrollar aplicaciones en múltiples lenguajes de programación, como Java, PHP, HTML5, JavaScript y C/C++. Ofrece características como edición de código, depuración, refactorización y herramientas de diseño gráfico. Además, es ampliamente utilizado en entornos educativos y profesionales por su facilidad de uso, integración con bibliotecas y soporte para diversos frameworks.
+
+* [Spring Boot](https://start.spring.io/) - Herramienta que facilita y acelera el desarrollo de aplicaciones web y microservicios al simplificar la configuración del Spring Framework mediante convenciones predeterminadas. Ofrece características como un servidor embebido (Tomcat, Jetty o Undertow), dependencias agrupadas mediante starters, soporte para monitoreo con Spring Actuator y una integración perfecta con arquitecturas de microservicios. Además, herramientas como Spring Initializr permiten generar proyectos de forma rápida y eficiente, reduciendo la complejidad y permitiendo a los desarrolladores enfocarse en la lógica de negocio.
 
 ## Autores ✒️
 
-* **Génesys Rondón** - *Instructora en Alura LATAM* - [Génesys](https://www.linkedin.com/in/genesysrondon914762182/)
-* **Eric Monné** - *Instructor en Alura LATAM* - [Eric](https://www.linkedin.com/in/ericmonnefo/)
-* **Victor Rodríguez** - *Desarrollador* - [Victor](https://www.linkedin.com/in/victor-manuel-rdz-l/)
+* **Jean Cristian Valencia García** - *Desarrollador* - [JEAN](https://www.linkedin.com/in/jean-valencia-anmdeil/)
