@@ -1,4 +1,4 @@
-# Challenge ONE - Back End Java + Spring - API Rest Foro Alura.
+# Practicando Spring Framework: Challenge Foro Hub
 
 ![Badge Release](https://img.shields.io/badge/Release%20Date:-enero2025-blue)``
 ![Badge Java](https://img.shields.io/badge/Java:-17-blue)
